@@ -4,6 +4,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
+//TODO add more methods and create GUI
+
 public class TuitionFeeEnhanced {
 	public static void main(String[] args) {
         while (true) {
