@@ -1,5 +1,6 @@
 
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -10,39 +11,74 @@ public class TuitionFeeEnhanced {
             Scanner scan = new Scanner(System.in);
             DecimalFormat df = new DecimalFormat("###,###.00");
 
-            //Initializing Data
+            //Declaration of variables
             String studentName = "";
+            String userInput = "";
             int units = 0;
             double price = 0.0, tuitionFee = 0.0, cashPayment = 0.0, firstPenalty = 0.0, secondPenalty = 0.0;
+            boolean continueProgram = true;
             
-            //Input needed data
-            System.out.print("\nEnter name of student: ");
-            studentName =scan.nextLine();
+            System.out.print("\nHello Student. Enter 'x' to exit the program, press Enter to continue program. ");
+            while (continueProgram) {
+                try{
+                    //Program exit condition
+                    userInput = scan.nextLine();
+                    if (userInput.equals("x")) {
+                        System.out.println("Exiting the program...");
+                        continueProgram = false;
+                        break;
+                     }
+                    
+                    //Input needed data
+                    System.out.print("\nEnter name of student: ");
+                    studentName =scan.nextLine();
+                    
+                    System.out.print("\nEnter number of units enrolled: ");
+                    units = scan.nextInt();
+                    
+                    System.out.print("\nEnter price per unit: ");
+                    price = scan.nextDouble();
+                    
+                    //Calculation Process
+                    tuitionFee = tuitionFee(units, price);
+                    cashPayment = cashPayment(tuitionFee);
+                    firstPenalty = firstPenalty(tuitionFee);
+                    secondPenalty = secondPenalty(tuitionFee);
+                    
+                    //Displaying Output
+                    System.out.println("\nComputed Tuition fee: " + df.format(tuitionFee) + " dollars");
+                    System.out.println(studentName + ", you could avail the following payment mode: ");
+                    
+                    System.out.println("\nPayment Mode: ");
+                    System.out.println("Cash Payment: " + df.format(cashPayment) + " dollars");
+                    System.out.println("2-installment: " + df.format(firstPenalty) + " dollars");
+                    System.out.println("3-installment: " + df.format(secondPenalty) + " dollars");
 
-            System.out.print("Enter number of units enrolled: ");
-            units = scan.nextInt();
+                    continueProgram = false;
+                    System.out.println("Thank you for using the program. Goodbye!");
+                    break;
+                }
+                catch (InputMismatchException e) {
+                    System.out.println("An error occurred. Please try again.");
+                    scan.next();
+                    scan.nextLine();
 
-            System.out.print("Enter price per unit: ");
-            price = scan.nextDouble();
-            
-            //Calculation Process
-            tuitionFee = tuitionFee(units, price);
-
-            cashPayment = cashPayment(tuitionFee);
-            firstPenalty = firstPenalty(tuitionFee);
-            secondPenalty = secondPenalty(tuitionFee);
-            
-            //Displaying Output
-            System.out.println("\nComputed Tuition fee: " + df.format(tuitionFee) + " dollars");
-            System.out.println(studentName + ", you could avail the following payment mode: ");
-
-            System.out.println("\nPayment Mode: ");
-            System.out.println("Cash Payment: " + df.format(cashPayment) + " dollars");
-            System.out.println("2-installment: " + df.format(firstPenalty) + " dollars");
-            System.out.println("3-installment: " + df.format(secondPenalty) + " dollars");
+                    System.out.println("\nComputed Tuition fee: " + df.format(tuitionFee) + " dollars");
+                    System.out.println(studentName + ", you could avail the following payment mode: ");
+        
+                    System.out.println("\nPayment Mode: ");
+                    System.out.println("Cash Payment: " + df.format(cashPayment) + " dollars");
+                    System.out.println("2-installment: " + df.format(firstPenalty) + " dollars");
+                    System.out.println("3-installment: " + df.format(secondPenalty) + " dollars");
+                    
+                    //re entering data
+                    System.out.println("\nPlease re-enter the invalid field:");
+                }
+            }
+            scan.close();
         }
 	}
-
+    //Calculation methods
     public static double tuitionFee(int units, double price) {
         return units * price;
     }

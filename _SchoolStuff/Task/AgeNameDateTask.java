@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class AgeNameDateTask {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        
         String name;
         int age, year, birthYear;
 
