@@ -39,14 +39,22 @@
 # Code exercise (SCHOOL):
 Find (questions, structuring, structured condition, )
 
+Hello, I want you to follow the subject, coverage and prompt mentioned below:
     FORMULA
     Topics:
     Coverages: (specifications of the Topic)
-        Conditions (easy and intermediate difficulty, problem solving, edge cases):
+    
+    Conditions (Specs): (difficulty level, specificity, problem solving, edge cases) (for analytical stuff)
+
 
     Number of Items: 
-    Test/quiz style: (multiple choices, identification, coding exercise)
+    
+    Test/quiz style: (multiple choices (with various types), identification, coding exercise)
 
+
+    Provide answer keys to the very bottom
+
+    Link Feed data(optional): 
 
 1. Hello, I want you to follow the subject, coverage and prompt mentioned below:
 
