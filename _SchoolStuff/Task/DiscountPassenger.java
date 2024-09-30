@@ -43,7 +43,9 @@ public class DiscountPassenger {
 
             case 'N': 
                  businessCharge = 0;
-                break;   
+                break; 
+            default:
+                System.out.println("invalid input");
         }
 
         switch (fareCode) {
@@ -56,6 +58,8 @@ public class DiscountPassenger {
             case 'C':
                 discountPercentage = 0.10;
                 break;
+            default:
+                System.out.println("invalid input");
         }
 
         discount = fare * discountPercentage;
