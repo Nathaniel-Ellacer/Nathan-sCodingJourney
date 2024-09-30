@@ -1,4 +1,4 @@
-package _SchoolStuff.Study.selectionStructures;
+package _SchoolStuff.Study.selectionStructures.selfStudy;
 import java.util.Scanner;
 public class ConditionalStatementPosNeg {
     public static void main(String[] args) {

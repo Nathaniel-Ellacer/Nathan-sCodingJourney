@@ -42,14 +42,14 @@ Find (questions, structuring, structured condition, )
 Hello, I want you to follow the subject, coverage and prompt mentioned below:
     FORMULA
     Topics:
-    Coverages: (specifications of the Topic)
+    Coverages: (Specific topic within topic)
     
-    Conditions (Specs): (difficulty level, specificity, problem solving, edge cases) (for analytical stuff)
+    Conditions (Specs): (difficulty level, specificity, problem solving, edge cases) (for analytical stuff, division of quiz for future prompts (part 2 of quiz))
 
 
-    Number of Items: 
+    Number of Items: 20-30
     
-    Test/quiz style: (multiple choices (with various types), identification, coding exercise)
+    Test/quiz style: (multiple choices (with various types... ex.: odd ones out, sentence form choices), identification, sequencing events, theory, true or false, coding exercise)
 
 
     Provide answer keys to the very bottom

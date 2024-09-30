@@ -1,8 +1,16 @@
-package _SchoolStuff.Study.selectionStructures;
+package _SchoolStuff.Study.selectionStructures.selfStudy;
 import java.util.Scanner;
 /*
- * && = and
- * || = or
+ * && = and (* - multiplication)
+ * 1 * 1 = 
+ * 1 * 0 = 
+ * 1 * 0 = 
+ * 0 * 0 = 
+ * || = or (+ - addition)
+ * 1 + 1 = 
+ * 1 + 0 = 
+ * 1 + 0 = 
+ * 0 + 0 = 
  * ! = not
  */
 public class LogicalOperators {
