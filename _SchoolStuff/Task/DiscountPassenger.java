@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class DiscountPassenger {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        DecimalFormat df = new DecimalFormat("###,###.00");
+        DecimalFormat df = new DecimalFormat("###,###.##");
 
         char fareCode, yesOrNo;
         double fare, discount, discountPercentage, businessCharge, newFare;
