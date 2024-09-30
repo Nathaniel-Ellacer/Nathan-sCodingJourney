@@ -1,4 +1,4 @@
-package Java.Tutorials.Basics.Logic;
+package _SchoolStuff.Study.selectionStructures.selfStudy;
 //Conditions
 
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package _SchoolStuff.Study.selectionStructures;
+package _SchoolStuff.Study.selectionStructures.selfStudy;
 public class Relational {
     public static void main(String[] args) {
         int x;

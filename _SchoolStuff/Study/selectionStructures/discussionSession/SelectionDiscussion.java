@@ -7,7 +7,7 @@ public class SelectionDiscussion {
 
         /*if(!(!(statement))) => true */
 
-        if (!(!(a >= --b))){ //T
+        if (!(!(a >= --b))){ //T cuz not*not = true
 
             if (!(b >= c)){ //nested if statements (T)
                 c = a++ + --b; //2 +1  next line + (2-1) = c
