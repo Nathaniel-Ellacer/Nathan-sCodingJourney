@@ -27,7 +27,7 @@ public class Ellacer_MachineProblem1 {
                         System.out.println("Sum of digits: " + SumDigits(userInputInteger));
                         break;
                     case 2:
-                        System.out.println("Reverse the number: " + ReverseNumber(userInputInteger));
+                        System.out.println("Reversed number: " + ReverseNumber(userInputInteger));
                         break;
                     case 3:
                         System.out.print("Display all the prime numbers from 2 to n (n is the user's input). Given n: ");
