@@ -35,7 +35,7 @@ class PrintQueue {
 
     public void processJob(PrintJob job) {
         if (queue.remove(job)) {
-            System.out.println("\n" +"Processing job: " + job.getDocumentName());
+            System.out.println("\n" +"Processing job: " + job.getDocumentName() + "\nJob Processed");
         } else {
             System.out.println("Job not found in the queue.");
         }
